@@ -1,0 +1,65 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  pipeline:
+    name: ETL + pruebas
+    runs-on: ubuntu-latest
+
+    services:
+      mysql:
+        image: mysql:8.0
+        env:
+          MYSQL_ROOT_PASSWORD: root
+        ports:
+          - 3306:3306
+        options: >-
+          --health-cmd="mysqladmin ping -proot"
+          --health-interval=5s
+          --health-timeout=5s
+          --health-retries=20
+
+    env:
+      MYSQL_HOST: 127.0.0.1
+      MYSQL_PORT: 3306
+      MYSQL_USER: root
+      MYSQL_PWD: root
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Los datos fuente se regeneran idénticos (semilla fija)
+        run: |
+          python3 tools/generar_datos.py
+          git diff --exit-code data/raw
+
+      - name: Ejecutar el ETL
+        run: ./etl/run_etl.sh
+
+      - name: Pruebas de reconciliación, calidad, modelo y funciones
+        run: ./tests/run_tests.sh
+
+      - name: Los CSV de Tableau del repo están al día
+        run: git diff --exit-code data/tableau
+
+      - name: Idempotencia (segunda corrida = mismo resultado)
+        run: |
+          ./etl/run_etl.sh > /dev/null
+          git diff --exit-code data/tableau
+          ./tests/run_tests.sh
+
+      - name: Resumen de calidad en la página del workflow
+        run: |
+          {
+            echo "### Calidad de datos"
+            echo
+            echo "| Regla | Acción | Filas | % |"
+            echo "|---|---|---:|---:|"
+            mysql -h 127.0.0.1 -u root -N --default-character-set=utf8mb4 pos_analytics \
+              -e "SELECT CONCAT('| ', regla, ' · ', descripcion, ' | ', accion, ' | ', filas, ' | ', pct_del_archivo, ' |') FROM mart_calidad"
+          } >> "$GITHUB_STEP_SUMMARY"

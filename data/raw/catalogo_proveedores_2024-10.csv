@@ -1,0 +1,55 @@
+Marca;Codigo;Descripcion;Categoria;Costo;Moneda;Precio_Lista_MXN;Vigente_Desde
+SUNMI;SUN-T2S;"SUNMI T2s terminal POS de escritorio 15.6""";Desktop POS;560,74;USD;14500,00;01/10/2024
+SUNMI;SUN-T2S-LITE;SUNMI T2s Lite terminal POS de escritorio;Desktop POS;456,20;USD;12300,00;01/10/2024
+SUNMI;SUN-T3-PRO;SUNMI T3 PRO terminal POS de escritorio;Desktop POS;773,04;USD;19900,00;01/10/2024
+SUNMI;SUN-D2-MINI;"SUNMI D2 mini terminal POS compacta 10.1""";Desktop POS;370,65;USD;9600,00;01/10/2024
+SUNMI;SUN-D3-MINI;SUNMI D3 MINI terminal POS compacta;Desktop POS;386,55;USD;10500,00;01/10/2024
+SUNMI;SUN-V2S;SUNMI V2s terminal portátil con impresora;Handheld POS;225,44;USD;5900,00;01/10/2024
+SUNMI;SUN-V2-PRO;SUNMI V2 PRO terminal portátil con impresora;Handheld POS;267,61;USD;6900,00;01/10/2024
+SUNMI;SUN-V3;SUNMI V3 terminal portátil con impresora;Handheld POS;306,56;USD;7800,00;01/10/2024
+SUNMI;SUN-P2;SUNMI P2 SmartPOS de pago;Payment Terminal;282,45;USD;7200,00;01/10/2024
+SUNMI;SUN-P2-PRO;SUNMI P2 PRO SmartPOS de pago;Payment Terminal;338,71;USD;8400,00;01/10/2024
+SUNMI;SUN-P3;SUNMI P3 SmartPOS de pago;Payment Terminal;359,51;USD;9400,00;01/10/2024
+SUNMI;SUN-L2S;SUNMI L2s computadora móvil rugerizada;Rugged Handheld;294,30;USD;8100,00;01/10/2024
+SUNMI;SUN-L2K;SUNMI L2K computadora móvil rugerizada;Rugged Handheld;319,15;USD;8800,00;01/10/2024
+SUNMI;SUN-M2;SUNMI M2 computadora móvil;Mobile Computer;191,57;USD;5400,00;01/10/2024
+SUNMI;SUN-K2;"SUNMI K2 kiosco de autoservicio 24""";Self-service Kiosk;1596,57;USD;36900,00;01/10/2024
+SUNMI;SUN-K2-MINI;SUNMI K2 MINI kiosco de autoservicio de mostrador;Self-service Kiosk;1011,67;USD;23700,00;01/10/2024
+SUNMI;SUN-NT311;SUNMI NT311 impresora de tickets en la nube;Receipt Printer;108,56;USD;3200,00;01/10/2024
+SUNMI;SUN-NT212;SUNMI NT212 impresora de tickets 58 mm;Receipt Printer;74,98;USD;2300,00;01/10/2024
+Bluebird;BB-EF501;Bluebird EF501 computadora móvil empresarial;COMPUTADORA MOVIL;449,44;USD;12400,00;01/10/2024
+Bluebird;BB-EF550;Bluebird EF550 computadora móvil empresarial;COMPUTADORA MOVIL;519,84;USD;14100,00;01/10/2024
+Bluebird;BB-VF550;Bluebird VF550 computadora móvil rugerizada;COMPUTADORA MOVIL RUGGED;628,61;USD;16800,00;01/10/2024
+Bluebird;BB-HF550X;Bluebird HF550X computadora móvil rugerizada;COMPUTADORA MOVIL RUGGED;705,89;USD;18900,00;01/10/2024
+Bluebird;BB-S50;Bluebird S50 computadora móvil rugerizada;COMPUTADORA MOVIL RUGGED;575,30;USD;15200,00;01/10/2024
+Bluebird;BB-EF400;Bluebird EF400 computadora móvil compacta;COMPUTADORA MOVIL;361,63;USD;10400,00;01/10/2024
+Bluebird;BB-RFR901;Bluebird RFR901 lector RFID UHF tipo sled;RFID UHF;501,49;USD;14700,00;01/10/2024
+Bluebird;BB-RFR900;Bluebird RFR900 lector RFID UHF portátil;RFID UHF;475,42;USD;13100,00;01/10/2024
+Bluebird;BB-BP30;Bluebird BP30 terminal portátil con impresora;TERMINAL PORTATIL;355,68;USD;9200,00;01/10/2024
+CipherLab;CL-RS35;CipherLab RS35 computadora móvil;Mobile Computer;356,01;USD;10200,00;01/10/2024
+CipherLab;CL-RS36;CipherLab RS36 computadora móvil;Mobile Computer;400,62;USD;11400,00;01/10/2024
+CipherLab;CL-RS38;CipherLab RS38 computadora móvil;Mobile Computer;453,14;USD;12500,00;01/10/2024
+CipherLab;CL-RS51;CipherLab RS51 computadora móvil rugerizada;Rugged Mobile Computer;509,81;USD;13700,00;01/10/2024
+CipherLab;CL-RK25;CipherLab RK25 computadora móvil rugerizada;Rugged Mobile Computer;556,04;USD;14600,00;01/10/2024
+CipherLab;CL-RK95;CipherLab RK95 computadora móvil ultra rugerizada;Rugged Mobile Computer;810,23;USD;22200,00;01/10/2024
+CipherLab;CL-1500P;CipherLab 1500P lector alámbrico lineal;Corded Scanner;30,07;USD;990,00;01/10/2024
+CipherLab;CL-1504P;CipherLab 1504P lector alámbrico 2D;Corded Scanner;44,09;USD;1490,00;01/10/2024
+CipherLab;CL-1564A;CipherLab 1564A lector inalámbrico 2D;Cordless Scanner;79,60;USD;2490,00;01/10/2024
+CipherLab;CL-2564;CipherLab 2564 lector inalámbrico 2D industrial;Cordless Scanner;158,24;USD;5100,00;01/10/2024
+CipherLab;CL-1660;CipherLab 1660 lector de bolsillo Bluetooth;Cordless Scanner;67,82;USD;2190,00;01/10/2024
+CipherLab;CL-RK95-RFID;CipherLab RK95 con módulo RFID UHF;RFID;1046,03;USD;29700,00;01/10/2024
+Urovo;URV-DT50;Urovo DT50 computadora móvil;PDA;276,08;USD;7800,00;01/10/2024
+Urovo;URV-DT40;Urovo DT40 computadora móvil;PDA;255,58;USD;6900,00;01/10/2024
+Urovo;URV-RT40;Urovo RT40 computadora móvil rugerizada;PDA industrial;395,84;USD;11100,00;01/10/2024
+Urovo;URV-DT50U;Urovo DT50U computadora móvil con RFID UHF;PDA RFID;525,96;USD;14900,00;01/10/2024
+Urovo;URV-I9100;Urovo i9100 terminal portátil con impresora;PDA con impresora;233,79;USD;6200,00;01/10/2024
+Urovo;URV-I9000S;Urovo i9000S SmartPOS de pago;SmartPOS;249,95;USD;6600,00;01/10/2024
+Urovo;URV-SR5600;Urovo SR5600 lector inalámbrico tipo anillo;Escáner inalámbrico;90,07;USD;2850,00;01/10/2024
+Urovo;URV-K319;Urovo K319 impresora de tickets 80 mm;Impresora térmica;63,68;USD;2050,00;01/10/2024
+Custom;CUS-KUBE-II;Custom KUBE II impresora para kiosco 80 mm;Stampanti Kiosk;3814,23;MXN;5900,00;01/10/2024
+Custom;CUS-VKP80III;Custom VKP80III impresora para kiosco 80 mm;Stampanti Kiosk;4494,91;MXN;7100,00;01/10/2024
+Custom;CUS-TG2480H;Custom TG2480-H impresora para kiosco 80 mm;Stampanti Kiosk;3443,33;MXN;5400,00;01/10/2024
+Custom;CUS-Q3X;Custom Q3X impresora de tickets 80 mm;Stampanti POS;2243,08;MXN;3500,00;01/10/2024
+Custom;CUS-KPM180H;Custom KPM180H impresora para kiosco;Stampanti Kiosk;3057,22;MXN;4800,00;01/10/2024
+Custom;CUS-K3;Custom K3 impresora de tickets;Stampanti POS;1714,52;MXN;2900,00;01/10/2024
+Custom;CUS-SILK;Custom SILK kiosco de autoservicio;Chioschi;34160,22;MXN;42900,00;01/10/2024

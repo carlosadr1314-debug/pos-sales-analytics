@@ -1,0 +1,11 @@
+regla,descripcion,accion,filas,pct_del_archivo
+R01,Fila duplicada exacta (doble exportación del ERP),DESCARTADO,461,1.19
+R02,Fecha vacía o inválida,CUARENTENA,134,0.34
+R03,SKU inexistente en catálogo y sin equivalencia,CUARENTENA,132,0.34
+R04,SKU con código anterior: se reemplaza por el vigente (equivalencias_sku),CORREGIDO,1124,2.89
+R05,Cantidad igual a cero o no numérica,DESCARTADO,162,0.42
+R06,Precio faltante: se imputa el precio de lista vigente a la fecha,CORREGIDO,387,1.00
+R07,Precio atípico: menor a 50 % o mayor a 200 % del precio de lista vigente,CUARENTENA,104,0.27
+R08,RFC inválido: se asigna a PÚBLICO EN GENERAL (XAXX010101000),CORREGIDO,269,0.69
+R09,Venta en USD: se convierte a MXN con el tipo de cambio del día,CORREGIDO,1154,2.97
+R10,Moneda vacía: se asume MXN,CORREGIDO,716,1.84

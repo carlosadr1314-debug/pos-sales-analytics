@@ -1,0 +1,48 @@
+# MySQL 8 listo para el ETL (local_infile activado).
+#
+#   docker compose up -d mysql            # 1. levantar la base
+#   docker compose run --rm etl           # 2. correr ETL + pruebas (no requiere MySQL instalado)
+#   docker compose down -v                # borrar todo
+#
+# Conexión desde Workbench/DBeaver: 127.0.0.1:3306, root / root
+
+services:
+  mysql:
+    image: mysql:8.0
+    container_name: pos_analytics_db
+    environment:
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD:-root}
+      TZ: America/Mexico_City
+    command:
+      - --local-infile=1
+      - --character-set-server=utf8mb4
+      - --collation-server=utf8mb4_0900_ai_ci
+    ports:
+      - "${MYSQL_PORT:-3306}:3306"
+    volumes:
+      - datos_mysql:/var/lib/mysql
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-p${MYSQL_ROOT_PASSWORD:-root}"]
+      interval: 5s
+      timeout: 5s
+      retries: 30
+
+  # Contenedor desechable que usa el cliente mysql de la misma imagen
+  etl:
+    image: mysql:8.0
+    depends_on:
+      mysql:
+        condition: service_healthy
+    working_dir: /repo
+    volumes:
+      - ./:/repo
+    environment:
+      MYSQL_HOST: mysql
+      MYSQL_PORT: 3306
+      MYSQL_USER: root
+      MYSQL_PWD: ${MYSQL_ROOT_PASSWORD:-root}
+    entrypoint: ["bash", "-c", "./etl/run_etl.sh && ./tests/run_tests.sh"]
+    profiles: ["tools"]
+
+volumes:
+  datos_mysql:

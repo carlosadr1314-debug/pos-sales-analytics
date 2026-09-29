@@ -1,0 +1,8 @@
+# Los archivos fuente se guardan byte por byte: el catálogo usa CRLF y
+# Windows-1252 a propósito (así llega de Excel) y el ETL lo espera así.
+data/raw/*.csv   -text
+data/tableau/*.csv -text
+# Scripts siempre con LF, aunque se clone en Windows
+*.sh   text eol=lf
+*.sql  text eol=lf
+*.py   text eol=lf
